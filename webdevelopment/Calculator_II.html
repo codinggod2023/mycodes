@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Mini Caluclator</title>
+        <style>
+        *{
+            text-align: center;
+        }
+        </style>
+    </head>
+    <body>
+        <!-- Making a mini caluclator --><div style="font-size: 50px;">
+        <input type="text" name="no1" id="no1" style="font-size: 50px;" placeholder="Enter your First Number" required><br>
+        <input type="text" name="no2" id="no2" style="font-size: 50px;" placeholder="Enter your Second Number" required><br><br></div>
+        <button style="font-size: 50px;" onclick="ad()">+</button> 
+        <button style="font-size: 50px;" onclick="su()">-</button>
+        <button style="font-size: 50px;" onclick="di()">÷</button>
+        <button style="font-size: 50px;" onclick="mu()">×</button>
+        <br><br><div id="v" style="color: blue;font-size: 100px;"></div>
+        <script>
+        function ad() {
+        var no1 = Number(document.getElementById("no1").value);
+        var no2 = Number(document.getElementById("no2").value);
+        var result = no1 + no2;
+        document.getElementById("v").textContent = result;
+        }
+        function su() {
+        var no1 = Number(document.getElementById("no1").value);
+        var no2 = Number(document.getElementById("no2").value);
+        var result = no1 - no2;
+        document.getElementById("v").textContent = result;
+        } 
+        function di() {
+        var no1 = Number(document.getElementById("no1").value);
+        var no2 = Number(document.getElementById("no2").value);
+        var result = no1 / no2;
+        document.getElementById("v").textContent = result;
+        }
+        function mu() {
+        var no1 = Number(document.getElementById("no1").value);
+        var no2 = Number(document.getElementById("no2").value);
+        var result = no1 * no2;
+        document.getElementById("v").textContent = result;
+        }
+        </script>
+    </body>
+</html>
